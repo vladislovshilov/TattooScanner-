@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TattooScaner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kx1-Or-WrW">
+                                <rect key="frame" x="16" y="59" width="361" height="665"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dRJ-qh-bTi">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="665"/>
+                                    </imageView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="syf-ea-Zbj">
+                                        <rect key="frame" x="170" y="284" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                <constraints>
+                                    <constraint firstItem="dRJ-qh-bTi" firstAttribute="centerX" secondItem="kx1-Or-WrW" secondAttribute="centerX" id="CsU-CV-fOB"/>
+                                    <constraint firstItem="dRJ-qh-bTi" firstAttribute="width" secondItem="kx1-Or-WrW" secondAttribute="width" id="F5q-RS-MfC"/>
+                                    <constraint firstItem="dRJ-qh-bTi" firstAttribute="height" secondItem="kx1-Or-WrW" secondAttribute="height" id="Y3r-dw-P6C"/>
+                                    <constraint firstItem="dRJ-qh-bTi" firstAttribute="centerY" secondItem="kx1-Or-WrW" secondAttribute="centerY" id="ms4-Mv-nSw"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Eu-gb-8kJ">
+                                <rect key="frame" x="165.66666666666666" y="761" width="62" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Scan"/>
+                                <connections>
+                                    <action selector="scanButtonDidPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XkF-Wx-QZ2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Object: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nl-tq-oPr">
+                                <rect key="frame" x="166.66666666666666" y="732" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kx1-Or-WrW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="4yi-3N-wxb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kx1-Or-WrW" secondAttribute="trailing" constant="16" id="AdQ-CZ-hrI"/>
+                            <constraint firstItem="kx1-Or-WrW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IHb-K5-ezJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3Eu-gb-8kJ" secondAttribute="bottom" constant="22" id="hdN-uI-Bh7"/>
+                            <constraint firstItem="3Eu-gb-8kJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="n17-vW-cPM"/>
+                            <constraint firstItem="3Eu-gb-8kJ" firstAttribute="top" secondItem="0nl-tq-oPr" secondAttribute="bottom" constant="8" id="ugQ-gE-JsD"/>
+                            <constraint firstItem="0nl-tq-oPr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ysR-Ou-Ago"/>
+                            <constraint firstItem="0nl-tq-oPr" firstAttribute="top" secondItem="kx1-Or-WrW" secondAttribute="bottom" constant="8" id="zkb-vt-8XB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="syf-ea-Zbj" id="BBi-Kz-Wme"/>
+                        <outlet property="cameraView" destination="kx1-Or-WrW" id="Dwv-YW-90P"/>
+                        <outlet property="imageView" destination="dRJ-qh-bTi" id="vc3-aD-PFE"/>
+                        <outlet property="scanButton" destination="3Eu-gb-8kJ" id="QKM-Pr-jlU"/>
+                        <outlet property="textLabel" destination="0nl-tq-oPr" id="zsi-R9-gao"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="uGK-4a-mls">
+            <objects>
+                <viewController storyboardIdentifier="ImageViewController" id="D8r-En-aXR" customClass="ImageViewController" customModule="TattooScaner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="udP-xJ-cvr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RTW-AC-PAH">
+                                <rect key="frame" x="0.0" y="12.666666666666686" width="393" height="852"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZZf-4U-5sJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RTW-AC-PAH" firstAttribute="width" secondItem="udP-xJ-cvr" secondAttribute="width" id="IaG-S8-yeu"/>
+                            <constraint firstItem="RTW-AC-PAH" firstAttribute="centerY" secondItem="ZZf-4U-5sJ" secondAttribute="centerY" id="PHe-kc-OXm"/>
+                            <constraint firstItem="RTW-AC-PAH" firstAttribute="height" secondItem="udP-xJ-cvr" secondAttribute="height" id="Yce-KI-Wka"/>
+                            <constraint firstItem="RTW-AC-PAH" firstAttribute="centerX" secondItem="ZZf-4U-5sJ" secondAttribute="centerX" id="o1g-bC-FAF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="RTW-AC-PAH" id="N3D-2M-Un2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a0z-vM-Xhu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F320576A2A12C17000B76A98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32057692A12C17000B76A98 /* AppDelegate.swift */; };
+		F320576C2A12C17000B76A98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320576B2A12C17000B76A98 /* SceneDelegate.swift */; };
+		F320576E2A12C17000B76A98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320576D2A12C17000B76A98 /* ViewController.swift */; };
+		F32057712A12C17000B76A98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F320576F2A12C17000B76A98 /* Main.storyboard */; };
+		F32057732A12C17200B76A98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F32057722A12C17200B76A98 /* Assets.xcassets */; };
+		F32057762A12C17200B76A98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32057742A12C17200B76A98 /* LaunchScreen.storyboard */; };
+		F32057812A12C17200B76A98 /* TattooScanerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32057802A12C17200B76A98 /* TattooScanerTests.swift */; };
+		F320578B2A12C17200B76A98 /* TattooScanerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320578A2A12C17200B76A98 /* TattooScanerUITests.swift */; };
+		F320578D2A12C17200B76A98 /* TattooScanerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320578C2A12C17200B76A98 /* TattooScanerUITestsLaunchTests.swift */; };
+		F320579A2A12C4EF00B76A98 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32057992A12C4EF00B76A98 /* ImageViewController.swift */; };
+		F320579D2A12C6D500B76A98 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F320579C2A12C6D500B76A98 /* Alamofire */; };
+		F320579F2A12CAE700B76A98 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320579E2A12CAE700B76A98 /* Model.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F320577D2A12C17200B76A98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F320575E2A12C17000B76A98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F32057652A12C17000B76A98;
+			remoteInfo = TattooScaner;
+		};
+		F32057872A12C17200B76A98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F320575E2A12C17000B76A98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F32057652A12C17000B76A98;
+			remoteInfo = TattooScaner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F32057662A12C17000B76A98 /* TattooScaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TattooScaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32057692A12C17000B76A98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F320576B2A12C17000B76A98 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F320576D2A12C17000B76A98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F32057702A12C17000B76A98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F32057722A12C17200B76A98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F32057752A12C17200B76A98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F32057772A12C17200B76A98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F320577C2A12C17200B76A98 /* TattooScanerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TattooScanerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32057802A12C17200B76A98 /* TattooScanerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattooScanerTests.swift; sourceTree = "<group>"; };
+		F32057862A12C17200B76A98 /* TattooScanerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TattooScanerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F320578A2A12C17200B76A98 /* TattooScanerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattooScanerUITests.swift; sourceTree = "<group>"; };
+		F320578C2A12C17200B76A98 /* TattooScanerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattooScanerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F32057992A12C4EF00B76A98 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		F320579E2A12CAE700B76A98 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F32057632A12C17000B76A98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F320579D2A12C6D500B76A98 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32057792A12C17200B76A98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32057832A12C17200B76A98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F320575D2A12C17000B76A98 = {
+			isa = PBXGroup;
+			children = (
+				F32057682A12C17000B76A98 /* TattooScaner */,
+				F320577F2A12C17200B76A98 /* TattooScanerTests */,
+				F32057892A12C17200B76A98 /* TattooScanerUITests */,
+				F32057672A12C17000B76A98 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F32057672A12C17000B76A98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F32057662A12C17000B76A98 /* TattooScaner.app */,
+				F320577C2A12C17200B76A98 /* TattooScanerTests.xctest */,
+				F32057862A12C17200B76A98 /* TattooScanerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F32057682A12C17000B76A98 /* TattooScaner */ = {
+			isa = PBXGroup;
+			children = (
+				F32057692A12C17000B76A98 /* AppDelegate.swift */,
+				F320576B2A12C17000B76A98 /* SceneDelegate.swift */,
+				F320576D2A12C17000B76A98 /* ViewController.swift */,
+				F32057992A12C4EF00B76A98 /* ImageViewController.swift */,
+				F320579E2A12CAE700B76A98 /* Model.swift */,
+				F320576F2A12C17000B76A98 /* Main.storyboard */,
+				F32057722A12C17200B76A98 /* Assets.xcassets */,
+				F32057742A12C17200B76A98 /* LaunchScreen.storyboard */,
+				F32057772A12C17200B76A98 /* Info.plist */,
+			);
+			path = TattooScaner;
+			sourceTree = "<group>";
+		};
+		F320577F2A12C17200B76A98 /* TattooScanerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F32057802A12C17200B76A98 /* TattooScanerTests.swift */,
+			);
+			path = TattooScanerTests;
+			sourceTree = "<group>";
+		};
+		F32057892A12C17200B76A98 /* TattooScanerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F320578A2A12C17200B76A98 /* TattooScanerUITests.swift */,
+				F320578C2A12C17200B76A98 /* TattooScanerUITestsLaunchTests.swift */,
+			);
+			path = TattooScanerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F32057652A12C17000B76A98 /* TattooScaner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F32057902A12C17200B76A98 /* Build configuration list for PBXNativeTarget "TattooScaner" */;
+			buildPhases = (
+				F32057622A12C17000B76A98 /* Sources */,
+				F32057632A12C17000B76A98 /* Frameworks */,
+				F32057642A12C17000B76A98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TattooScaner;
+			packageProductDependencies = (
+				F320579C2A12C6D500B76A98 /* Alamofire */,
+			);
+			productName = TattooScaner;
+			productReference = F32057662A12C17000B76A98 /* TattooScaner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F320577B2A12C17200B76A98 /* TattooScanerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F32057932A12C17200B76A98 /* Build configuration list for PBXNativeTarget "TattooScanerTests" */;
+			buildPhases = (
+				F32057782A12C17200B76A98 /* Sources */,
+				F32057792A12C17200B76A98 /* Frameworks */,
+				F320577A2A12C17200B76A98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F320577E2A12C17200B76A98 /* PBXTargetDependency */,
+			);
+			name = TattooScanerTests;
+			productName = TattooScanerTests;
+			productReference = F320577C2A12C17200B76A98 /* TattooScanerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F32057852A12C17200B76A98 /* TattooScanerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F32057962A12C17200B76A98 /* Build configuration list for PBXNativeTarget "TattooScanerUITests" */;
+			buildPhases = (
+				F32057822A12C17200B76A98 /* Sources */,
+				F32057832A12C17200B76A98 /* Frameworks */,
+				F32057842A12C17200B76A98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F32057882A12C17200B76A98 /* PBXTargetDependency */,
+			);
+			name = TattooScanerUITests;
+			productName = TattooScanerUITests;
+			productReference = F32057862A12C17200B76A98 /* TattooScanerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F320575E2A12C17000B76A98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F32057652A12C17000B76A98 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					F320577B2A12C17200B76A98 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = F32057652A12C17000B76A98;
+					};
+					F32057852A12C17200B76A98 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = F32057652A12C17000B76A98;
+					};
+				};
+			};
+			buildConfigurationList = F32057612A12C17000B76A98 /* Build configuration list for PBXProject "TattooScaner" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F320575D2A12C17000B76A98;
+			packageReferences = (
+				F320579B2A12C6D500B76A98 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = F32057672A12C17000B76A98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F32057652A12C17000B76A98 /* TattooScaner */,
+				F320577B2A12C17200B76A98 /* TattooScanerTests */,
+				F32057852A12C17200B76A98 /* TattooScanerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F32057642A12C17000B76A98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32057762A12C17200B76A98 /* LaunchScreen.storyboard in Resources */,
+				F32057732A12C17200B76A98 /* Assets.xcassets in Resources */,
+				F32057712A12C17000B76A98 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F320577A2A12C17200B76A98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32057842A12C17200B76A98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F32057622A12C17000B76A98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F320579F2A12CAE700B76A98 /* Model.swift in Sources */,
+				F320576E2A12C17000B76A98 /* ViewController.swift in Sources */,
+				F320576A2A12C17000B76A98 /* AppDelegate.swift in Sources */,
+				F320579A2A12C4EF00B76A98 /* ImageViewController.swift in Sources */,
+				F320576C2A12C17000B76A98 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32057782A12C17200B76A98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F32057812A12C17200B76A98 /* TattooScanerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32057822A12C17200B76A98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F320578B2A12C17200B76A98 /* TattooScanerUITests.swift in Sources */,
+				F320578D2A12C17200B76A98 /* TattooScanerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F320577E2A12C17200B76A98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F32057652A12C17000B76A98 /* TattooScaner */;
+			targetProxy = F320577D2A12C17200B76A98 /* PBXContainerItemProxy */;
+		};
+		F32057882A12C17200B76A98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F32057652A12C17000B76A98 /* TattooScaner */;
+			targetProxy = F32057872A12C17200B76A98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F320576F2A12C17000B76A98 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F32057702A12C17000B76A98 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F32057742A12C17200B76A98 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F32057752A12C17200B76A98 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F320578E2A12C17200B76A98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F320578F2A12C17200B76A98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F32057912A12C17200B76A98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZZU2FDU5KQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TattooScaner/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wladyslav-sealove.TattooScaner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F32057922A12C17200B76A98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZZU2FDU5KQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TattooScaner/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wladyslav-sealove.TattooScaner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F32057942A12C17200B76A98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZZU2FDU5KQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wladyslav-sealove.TattooScanerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TattooScaner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TattooScaner";
+			};
+			name = Debug;
+		};
+		F32057952A12C17200B76A98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZZU2FDU5KQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wladyslav-sealove.TattooScanerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TattooScaner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TattooScaner";
+			};
+			name = Release;
+		};
+		F32057972A12C17200B76A98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZZU2FDU5KQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wladyslav-sealove.TattooScanerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TattooScaner;
+			};
+			name = Debug;
+		};
+		F32057982A12C17200B76A98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZZU2FDU5KQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wladyslav-sealove.TattooScanerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TattooScaner;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F32057612A12C17000B76A98 /* Build configuration list for PBXProject "TattooScaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F320578E2A12C17200B76A98 /* Debug */,
+				F320578F2A12C17200B76A98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F32057902A12C17200B76A98 /* Build configuration list for PBXNativeTarget "TattooScaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32057912A12C17200B76A98 /* Debug */,
+				F32057922A12C17200B76A98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F32057932A12C17200B76A98 /* Build configuration list for PBXNativeTarget "TattooScanerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32057942A12C17200B76A98 /* Debug */,
+				F32057952A12C17200B76A98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F32057962A12C17200B76A98 /* Build configuration list for PBXNativeTarget "TattooScanerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32057972A12C17200B76A98 /* Debug */,
+				F32057982A12C17200B76A98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F320579B2A12C6D500B76A98 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F320579C2A12C6D500B76A98 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F320579B2A12C6D500B76A98 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F320575E2A12C17000B76A98 /* Project object */;
+}
