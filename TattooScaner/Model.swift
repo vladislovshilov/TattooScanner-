@@ -7,19 +7,11 @@
 
 import Foundation
 
-struct APIResponse: Decodable {
-    let responses: [Response]
-}
-
-struct Response: Decodable {
-    let logoAnnotations: [LogoAnnotation]
-}
-
-struct LogoAnnotation: Decodable {
-    let mid: String
-    let description: String
-    let score: Double
-    let boundingPoly: BoundingPoly
+struct DetectedObject: Decodable {
+    var id: String
+    var name: String
+    var value: Double
+    var app_id: String
 }
 
 struct BoundingPoly: Decodable {
