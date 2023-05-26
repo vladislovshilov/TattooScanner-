@@ -14,6 +14,11 @@ struct DetectedObject: Decodable {
     var app_id: String
 }
 
+struct TattooDefinition: Decodable {
+    var definition: String
+    var name: String
+}
+
 struct BoundingPoly: Decodable {
     let vertices: [Vertex]
 }

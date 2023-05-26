@@ -20,6 +20,7 @@
 		F320579D2A12C6D500B76A98 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F320579C2A12C6D500B76A98 /* Alamofire */; };
 		F320579F2A12CAE700B76A98 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320579E2A12CAE700B76A98 /* Model.swift */; };
 		F324846F2A1BB58600BEB515 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F324846E2A1BB58600BEB515 /* ImageService.swift */; };
+		F3B619692A1E360F00774E2B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B619682A1E360F00774E2B /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		F32057992A12C4EF00B76A98 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		F320579E2A12CAE700B76A98 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F324846E2A1BB58600BEB515 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		F3B619682A1E360F00774E2B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				F32057992A12C4EF00B76A98 /* ImageViewController.swift */,
 				F320579E2A12CAE700B76A98 /* Model.swift */,
 				F324846E2A1BB58600BEB515 /* ImageService.swift */,
+				F3B619682A1E360F00774E2B /* NetworkManager.swift */,
 				F320576F2A12C17000B76A98 /* Main.storyboard */,
 				F32057722A12C17200B76A98 /* Assets.xcassets */,
 				F32057742A12C17200B76A98 /* LaunchScreen.storyboard */,
@@ -278,6 +281,7 @@
 				F320579F2A12CAE700B76A98 /* Model.swift in Sources */,
 				F320576E2A12C17000B76A98 /* ViewController.swift in Sources */,
 				F320576A2A12C17000B76A98 /* AppDelegate.swift in Sources */,
+				F3B619692A1E360F00774E2B /* NetworkManager.swift in Sources */,
 				F320579A2A12C4EF00B76A98 /* ImageViewController.swift in Sources */,
 				F320576C2A12C17000B76A98 /* SceneDelegate.swift in Sources */,
 				F324846F2A1BB58600BEB515 /* ImageService.swift in Sources */,
