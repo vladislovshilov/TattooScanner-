@@ -9,7 +9,7 @@ import UIKit
 import Alamofire
 
 class ImageViewController: UIViewController {
-
+    
     @IBOutlet private weak var imageView: UIImageView!
     
     @IBOutlet private weak var pickResultContainerView: UIView!
@@ -19,11 +19,17 @@ class ImageViewController: UIViewController {
     @IBOutlet private weak var gptActivityIndicator: UIActivityIndicatorView!
     @IBOutlet private weak var submitButton: UIButton!
     
+    @IBOutlet private weak var drawingView: UIView!
+    
     var imageData: UIImage?
     
     private var shapeLayer = CAShapeLayer()
     
-    private var detectedObjects: [DetectedObject]? = [DetectedObject]()
+    private var lastPoint: CGPoint?
+    private var currentPath = UIBezierPath()
+    private var currentLayer = CAShapeLayer()
+    
+    private var detectedObjects: [DetectedObject]? = []
     private var pickedObjects = Set<String>() {
         didSet {
             submitButton.isEnabled = !pickedObjects.isEmpty
@@ -40,7 +46,7 @@ class ImageViewController: UIViewController {
         pickResultTableView.dataSource = self
         pickResultTableView.layer.cornerRadius = 10
         pickResultContainerView.layer.cornerRadius = 10
-
+        
         imageView.image = imageData
     }
     
@@ -58,8 +64,8 @@ class ImageViewController: UIViewController {
                 self.gptActivityIndicator.stopAnimating()
                 
                 switch result {
-                case .success(let data): 
-                    if data.filter{ $0.name == "tattoo" }.count > 0 {
+                case .success(let data):
+                    if data.filter({ $0.name == "tattoo" }).count > 0 {
                         self.configureResult(withData: data)
                     } else {
                         self.configureEmptyResult()
@@ -169,6 +175,44 @@ extension ImageViewController {
         imageView.layer.addSublayer(shapeLayer)
     }
 }
+
+// MARK: - Drawing
+
+//extension ImageViewController {
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        guard let touch = touches.first else { return }
+//        
+//        lastPoint = touch.location(in: self.view)
+//        // reset both objects so that every touch is a brand new layer and shape
+//        currentLayer = CAShapeLayer()
+//        currentPath = UIBezierPath()
+//        
+//        canvasView.layer.addSublayer(currentLayer)
+//    }
+//    
+//    override func drawLine(from fromPoint: CGPoint, to toPoint: CGPoint) {
+//        
+//        currentPath.move(to: fromPoint)
+//        currentPath.addLine(to: toPoint)
+//        
+//        currentLayer.path = currentPath.cgPath
+//        currentLayer.backgroundColor = UIColor.red.cgColor
+//        currentLayer.strokeColor = pencil.color.cgColor
+//        currentLayer.lineWidth = pencil.strokeSize
+//        currentLayer.lineCap = .round
+//        currentLayer.lineJoin = .round
+//    }
+//    
+//    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        // Create and image representation of all layers in tempImageView
+//        let renderer = UIGraphicsImageRenderer(bounds: canvasView.bounds)
+//        let image = renderer.image { rendererContext in
+//            canvasView.layer.render(in: rendererContext.cgContext)
+//        }
+//        // The resulting image of rendering all layers of `canvasView` is saved in `mainImageView`
+//        mainImageView.image = image
+//    }
+//}
 
 // MARK: UITableView
 

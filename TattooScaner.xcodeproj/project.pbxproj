@@ -21,6 +21,10 @@
 		F320579F2A12CAE700B76A98 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320579E2A12CAE700B76A98 /* Model.swift */; };
 		F324846F2A1BB58600BEB515 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F324846E2A1BB58600BEB515 /* ImageService.swift */; };
 		F3B619692A1E360F00774E2B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B619682A1E360F00774E2B /* NetworkManager.swift */; };
+		F3BFD8482A93A19C00B599B9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BFD8472A93A19C00B599B9 /* Coordinator.swift */; };
+		F3BFD84A2A93A52E00B599B9 /* SwiftUIHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BFD8492A93A52E00B599B9 /* SwiftUIHostingController.swift */; };
+		F3BFD84C2A93A5B300B599B9 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BFD84B2A93A5B300B599B9 /* TestView.swift */; };
+		F3BFD84F2A93B3CF00B599B9 /* Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BFD84E2A93B3CF00B599B9 /* Analysis.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		F320579E2A12CAE700B76A98 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F324846E2A1BB58600BEB515 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		F3B619682A1E360F00774E2B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F3BFD8472A93A19C00B599B9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F3BFD8492A93A52E00B599B9 /* SwiftUIHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIHostingController.swift; sourceTree = "<group>"; };
+		F3BFD84B2A93A5B300B599B9 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		F3BFD84E2A93B3CF00B599B9 /* Analysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analysis.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,17 +117,14 @@
 		F32057682A12C17000B76A98 /* TattooScaner */ = {
 			isa = PBXGroup;
 			children = (
-				F32057692A12C17000B76A98 /* AppDelegate.swift */,
-				F320576B2A12C17000B76A98 /* SceneDelegate.swift */,
+				F3BFD84D2A93B38900B599B9 /* Model */,
+				F3BFD8462A93A19200B599B9 /* Navigation */,
+				F3BFD8452A93A14F00B599B9 /* default */,
 				F320576D2A12C17000B76A98 /* ViewController.swift */,
+				F3BFD84B2A93A5B300B599B9 /* TestView.swift */,
 				F32057992A12C4EF00B76A98 /* ImageViewController.swift */,
-				F320579E2A12CAE700B76A98 /* Model.swift */,
 				F324846E2A1BB58600BEB515 /* ImageService.swift */,
 				F3B619682A1E360F00774E2B /* NetworkManager.swift */,
-				F320576F2A12C17000B76A98 /* Main.storyboard */,
-				F32057722A12C17200B76A98 /* Assets.xcassets */,
-				F32057742A12C17200B76A98 /* LaunchScreen.storyboard */,
-				F32057772A12C17200B76A98 /* Info.plist */,
 			);
 			path = TattooScaner;
 			sourceTree = "<group>";
@@ -139,6 +144,37 @@
 				F320578C2A12C17200B76A98 /* TattooScanerUITestsLaunchTests.swift */,
 			);
 			path = TattooScanerUITests;
+			sourceTree = "<group>";
+		};
+		F3BFD8452A93A14F00B599B9 /* default */ = {
+			isa = PBXGroup;
+			children = (
+				F32057692A12C17000B76A98 /* AppDelegate.swift */,
+				F320576B2A12C17000B76A98 /* SceneDelegate.swift */,
+				F320576F2A12C17000B76A98 /* Main.storyboard */,
+				F32057722A12C17200B76A98 /* Assets.xcassets */,
+				F32057742A12C17200B76A98 /* LaunchScreen.storyboard */,
+				F32057772A12C17200B76A98 /* Info.plist */,
+			);
+			path = default;
+			sourceTree = "<group>";
+		};
+		F3BFD8462A93A19200B599B9 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F3BFD8472A93A19C00B599B9 /* Coordinator.swift */,
+				F3BFD8492A93A52E00B599B9 /* SwiftUIHostingController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		F3BFD84D2A93B38900B599B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F320579E2A12CAE700B76A98 /* Model.swift */,
+				F3BFD84E2A93B3CF00B599B9 /* Analysis.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,10 +314,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3BFD8482A93A19C00B599B9 /* Coordinator.swift in Sources */,
 				F320579F2A12CAE700B76A98 /* Model.swift in Sources */,
+				F3BFD84A2A93A52E00B599B9 /* SwiftUIHostingController.swift in Sources */,
 				F320576E2A12C17000B76A98 /* ViewController.swift in Sources */,
+				F3BFD84F2A93B3CF00B599B9 /* Analysis.swift in Sources */,
 				F320576A2A12C17000B76A98 /* AppDelegate.swift in Sources */,
 				F3B619692A1E360F00774E2B /* NetworkManager.swift in Sources */,
+				F3BFD84C2A93A5B300B599B9 /* TestView.swift in Sources */,
 				F320579A2A12C4EF00B76A98 /* ImageViewController.swift in Sources */,
 				F320576C2A12C17000B76A98 /* SceneDelegate.swift in Sources */,
 				F324846F2A1BB58600BEB515 /* ImageService.swift in Sources */,
@@ -463,7 +503,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZZU2FDU5KQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TattooScaner/Info.plist;
+				INFOPLIST_FILE = TattooScaner/default/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -491,7 +531,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZZU2FDU5KQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TattooScaner/Info.plist;
+				INFOPLIST_FILE = TattooScaner/default/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

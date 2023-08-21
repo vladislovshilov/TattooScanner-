@@ -9,9 +9,20 @@ import UIKit
 import AVFoundation
 import Alamofire
 
-class ViewController: UIViewController {
+protocol HomeViewControllerRepresentable {
+    var subscriptionButtonTapCallback: (() -> Void)? { get set }
+    var settingsButtonTapCallback: (() -> Void)? { get set }
+    var newAnalysisButtonTapCallback: (() -> Void)? { get set }
+    var scanTapCallback: (() -> Void)? { get set }
+}
 
+class ViewController: UIViewController, HomeViewControllerRepresentable {
     @IBOutlet private weak var scanButton: UIButton!
+    
+    var subscriptionButtonTapCallback: (() -> Void)?
+    var settingsButtonTapCallback: (() -> Void)?
+    var newAnalysisButtonTapCallback: (() -> Void)?
+    var scanTapCallback: (() -> Void)?
     
     private let session = AVCaptureSession()
     private lazy var previewLayer = AVCaptureVideoPreviewLayer(session: session)
@@ -20,6 +31,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("home loaded")
+
         guard let device = AVCaptureDevice.default(for: .video) else {
             print("Camera not available.")
             return
@@ -57,6 +70,8 @@ class ViewController: UIViewController {
                 self?.session.startRunning()
             }
         }
+        
+        print("home will wappera")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -70,8 +85,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func scanButtonDidPress(_ sender: Any) {
-        let photoSettings = AVCapturePhotoSettings()
-        photoOutput.capturePhoto(with: photoSettings, delegate: self)
+//        let photoSettings = AVCapturePhotoSettings()
+//        photoOutput.capturePhoto(with: photoSettings, delegate: self)
+        newAnalysisButtonTapCallback?()
     }
 }
 

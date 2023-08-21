@@ -18,6 +18,38 @@
             endingLineNumber = "23"
             landmarkName = "get(path:parameters:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "93139AB5-C3B2-499B-AFF1-0006C166B374 - 5b9546dc197b164c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.CheckedContinuation&lt;Foundation.Data, Swift.Error&gt;) -&gt; () in TattooScaner.NetworkManager.get(path: Swift.String, parameters: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;) async throws -&gt; Foundation.Data"
+                  moduleName = "TattooScaner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usiki/Desktop/pet/TattooScaner/TattooScaner/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "232">
+               </Location>
+               <Location
+                  uuid = "93139AB5-C3B2-499B-AFF1-0006C166B374 - 5b9546dc197b164c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.CheckedContinuation&lt;Foundation.Data, Swift.Error&gt;) -&gt; () in TattooScaner.NetworkManager.get(path: Swift.String, parameters: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;) async throws -&gt; Foundation.Data"
+                  moduleName = "TattooScaner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/usiki/Desktop/pet/TattooScaner/TattooScaner/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "260">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
